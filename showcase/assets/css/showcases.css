@@ -1,0 +1,290 @@
+/* ====================== [ Custom Showcase Styles  ] ====================== */
+/* ------------ slideshow1------------ */
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.frame .slide-nav-butn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slides-nav__button {
+  display: block;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  width: 55px;
+  height: 24px;
+  padding: 0;
+  margin: 0 0.75rem;
+}
+
+.slides-nav__button:focus {
+  outline: none;
+}
+
+.slides-nav svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+
+.slides-nav__index {
+  margin-left: 2rem;
+  white-space: nowrap;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+
+.slides-nav__index > span {
+  width: 2rem;
+}
+
+.slides-nav__index-current {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-nav__index-current span {
+  display: inline-block;
+}
+
+.frame__title {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.frame__title span {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.frame__links {
+  display: inline;
+}
+
+.frame__links a:not(:last-child),
+.frame__demos a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.frame__demos {
+  margin: 1rem 0;
+}
+
+a.frame__demo--current,
+a.frame__demo--current:hover {
+  color: #fff;
+}
+
+.slideshow {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  margin: 0;
+}
+
+.slide,
+.slide__img-wrap,
+.slide__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.js .slide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.js .slide--current {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slide__img-wrap {
+  will-change: transform;
+  overflow: hidden;
+}
+
+.slide__img {
+  background-size: cover;
+  will-change: transform;
+  -webkit-backspace-visibility: hidden;
+}
+
+.slide__caption {
+  position: relative;
+  padding: 0 10vw;
+  cursor: default;
+  width: 100%;
+}
+
+.text-row {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+}
+
+.text-row > span {
+  display: block;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+/* ------------ slideshow2------------ */
+main {
+  position: relative;
+  width: 100%;
+}
+
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slide--current {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slide__img {
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: calc(100% + 400px);
+  height: calc(100% + 400px);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.slidenav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 40px;
+}
+
+.slidenav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slidenav .slidenav__item--next {
+  margin-left: auto;
+}
+
+.slidenav .slidenav__item--next i {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.slidenav button {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.slidenav button i {
+  margin-right: 20px;
+}
+
+.shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  pointer-events: none;
+}
+
+/* Variables
+-----------------------------------------------------------------*/
